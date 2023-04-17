@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="stylesheet" href="index style.css">
+    <link rel="icon" type="image/x-icon" href="kisspng.png">
+
+
+</head>
+
+<body id="body">
+    <h1>Welcome to Our Department Store</h1>
+    <div class="container">
+        <div class="part1">
+            <fieldset class="customer-info">
+                <legend id="legend1">Customer Information</legend>
+                <label for="name">Customer Name : <input type="text" name="Customer Name" id="name"></label>
+                <label for="name">Mobile Number : <input type="number" name="number" id="number"></label>
+            </fieldset>
+        </div>
+        <div class="part2">
+            <fieldset class="product">
+                <legend id="legend2">Select Product </legend>
+                <input type="search" id="Search-id" list="item-list" placeholder="Select Items">
+                <datalist id="item-list">
+                    <option value="fruit" id="fruit">
+
+                    <option value="nuts" id="nuts">
+                    <option value="rice" id="rice">
+                    <option value="dall" id="dall">
+                    <option value="toothpast" id="toothpast">
+                    <option value="mm" id="mm">
+                </datalist>
+                <label for="quantity">Quantity: <input type="number" name="quantity" id="quantity"></label>
+                <button type="button" id="add-button" onclick="myFunction()"><i class="fa fa-folder"></i>Add</button>
+        </div>
+    </div>
+    <div class="container1">
+        <fieldset class="fieldset1">
+            <legend> Your Bill </legend>
+            <h2>Welcome</h2>
+            <div class="myBill">
+                <h3>Customer Name : <span id="name2"></span></h3>
+                <h3>Mobile Number : <span id="number2"></span></h3>
+                <h3>Invoice : <span id="bill-number"></span></h3>
+                <script>
+                    document.getElementById("bill-number").textContent = Math.floor(Math.random() * 10000);
+                </script>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Discription</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="billstatement">
+                    </tbody>
+                </table>
+            </div>
+            <button id="print-button">Print</button>
+            <!-- <input type="button" value="Reset" onClick="fu()" /> -->
+            <div id="reset-btn"></div>
+
+        </fieldset>
+    </div>
+    <script src="bill.js"></script>
+</body>
+
+</html>

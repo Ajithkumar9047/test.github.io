@@ -1,0 +1,113 @@
+/* log in page*/
+* {
+  background-color: transparent;
+}
+
+#login-form {
+  margin-top: 150px;
+  margin-left: 500px;
+  width: 500px;
+  background-color: transparent;
+  padding: 20px;
+  border: 2px solid rgb(45, 36, 36);
+  border-radius: 5px;
+  border-style: double;
+  transition: border-color 10s infinite;
+}
+
+
+
+label {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+  padding-top: 15px;
+  font-size: large;
+}
+
+form input[type="text"],
+form input[type="password"] {
+
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+
+input[type="submit"] {
+  background-color: red;
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  border: 1px solid black;
+  margin-left: 210px;
+}
+
+input[type="submit"]:hover {
+  background-color: green;
+  color: black;
+  cursor: pointer;
+}
+
+form button[type="submit"] {
+
+  width: 100%;
+  background-color: #a20808;
+  color: transparent;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* blink h1 */
+blink {
+
+  font-size: 20px;
+  font-weight: bold;
+  color: #2d38be;
+  transition: 1s;
+
+}
+
+h1 {
+  background: -webkit-linear-gradient(blue, red, yellow);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.bg {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: animateBg 10s ease infinite;
+}
+
+@keyframes animateBg {
+  0% {
+    background-color: antiquewhite;
+  }
+
+  50% {
+    background-color: beige;
+  }
+
+  100% {
+    background-color: azure;
+  }
+
+
+}
